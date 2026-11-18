@@ -1,0 +1,14 @@
+{
+  "provenance": "assistant-selected weekdays/timezone; user requested 4/week and Nov12 start",
+  "timezone": "Europe/Copenhagen",
+  "days": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "hour": 16,
+  "minute": 0,
+  "start": "2026-11-12",
+  "catchUpHours": 8
+}

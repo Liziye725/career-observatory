@@ -1,0 +1,2 @@
+# Optional PDF utility only. Core Node application has no Python dependency.
+PyMuPDF>=1.24,<2

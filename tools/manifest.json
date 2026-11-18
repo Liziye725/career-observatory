@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "provenance": "ASSISTANT: inventory of platform tools used and portable equivalents",
+  "portable": [
+    {"capability":"gmail.read","implementation":"src/gmail.mjs","endpoint":"https://gmail.googleapis.com/gmail/v1/users/me/messages","authorization":"OAuth gmail.readonly","liveVerified":false},
+    {"capability":"research.execute","implementation":"scripts/run.mjs","adapter":"RESEARCH_EXECUTABLE(inputPath, outputPath)","configured":false},
+    {"capability":"pdf.extract","implementation":"scripts/extract-pdf.py","dependency":"optional PyMuPDF","configured":true},
+    {"capability":"archive.publish","implementation":"src/publisher.mjs","authorization":"Private Site service token, environment only","liveVerified":"Existing platform path verified; portable publisher not live tested"},
+    {"capability":"database.persist","implementation":"src/database.mjs","backend":"Node24 SQLite","tested":true}
+  ],
+  "platformOnly": [
+    {"tool":"mcp__codex_apps__search_service_web_run","operations":["system2_search_query","open","click","find"],"purpose":"JD and financial source research"},
+    {"tool":"mcp__codex_apps__sites_get_site","purpose":"Project, private access and ephemeral service access"},
+    {"tool":"mcp__codex_apps__sites_create_source_repository_write_credential","purpose":"Ephemeral source Git credentials"},
+    {"tool":"mcp__codex_apps__sites_save_version_and_deploy_private","purpose":"Private Site deployment"},
+    {"tool":"mcp__codex_apps__sites_get_deployment_status","purpose":"Deployment outcome"},
+    {"tool":"mcp__codex_apps__automations_peek","purpose":"Read configured task"},
+    {"tool":"mcp__codex_apps__automations_update","purpose":"Update existing task prompt or schedule"},
+    {"tool":"mcp__codex_apps__automations_run_now","purpose":"Immediate run; historical attempt failed with 404"},
+    {"tool":"skills__read","purpose":"Read platform skills, not a portable runtime dependency"},
+    {"tool":"exec_command","purpose":"Build, test, Git, PDF processing"}
+  ]
+}

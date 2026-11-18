@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "example-ai-role",
+      "title": "AI Engineer",
+      "company": "示例公司（虚构）",
+      "summary": "合成演示，不是真实招聘。",
+      "markdown": "# 示例公司 · AI Engineer\n\n岗位发布日期：2026-01-01。\n\n这是合成研究样本，不代表真实财报或工作机会。",
+      "topic": "ai-engineering",
+      "tags": [
+        "合成样本"
+      ],
+      "sourceUrl": "https://example.com/careers/ai",
+      "jobStatus": "unknown",
+      "analysisStatus": "pilot",
+      "publishedDate": "2026-01-01",
+      "publishedDatePrecision": "exact",
+      "publishedDateSourceUrl": "https://example.com/careers/ai",
+      "publishedDateEvidence": "合成示例：2026-01-01发布。",
+      "reportId": "2026-01-01"
+    }
+  ],
+  "report": {
+    "id": "2026-01-01",
+    "title": "合成演示 · 示例公司与成长练习",
+    "summary": "仅用于测试持久化、主题和报告列表。",
+    "markdown": "# 合成演示\n\n示例公司 · AI Engineer · 发布于2026-01-01。\n\n全部为合成数据，不是正式六公司研究。",
+    "status": "pilot",
+    "companies": [
+      "示例公司（虚构）"
+    ],
+    "period": "合成",
+    "financialCoverage": "合成，无真实财务数据"
+  },
+  "sources": [
+    {
+      "id": "synthetic-annual",
+      "url": "https://example.com/annual",
+      "kind": "synthetic",
+      "retrievedAt": "2026-01-01T00:00:00Z",
+      "locator": "示例第1页"
+    }
+  ],
+  "financialFacts": [
+    {
+      "id": "synthetic-revenue",
+      "company": "示例公司（虚构）",
+      "entityScope": "虚构集团",
+      "period": "2025",
+      "currency": "EUR",
+      "unit": "million",
+      "metric": "revenue",
+      "value": 10,
+      "sourceId": "synthetic-annual",
+      "locator": "合成表第1页",
+      "definition": "合成收入，不是真实数据"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+PRAGMA foreign_keys=ON;
+CREATE TABLE IF NOT EXISTS schema_migrations(version INTEGER PRIMARY KEY, applied_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS objects(key TEXT PRIMARY KEY, value TEXT NOT NULL CHECK(json_valid(value)), metadata TEXT NOT NULL CHECK(json_valid(metadata)), updated_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS object_revisions(revision INTEGER PRIMARY KEY AUTOINCREMENT, object_key TEXT NOT NULL, value TEXT NOT NULL CHECK(json_valid(value)), saved_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS job_index(job_id TEXT PRIMARY KEY, company TEXT NOT NULL, title TEXT NOT NULL, topic TEXT NOT NULL, published_date TEXT, first_seen_at TEXT NOT NULL, updated_at TEXT NOT NULL);
+CREATE INDEX IF NOT EXISTS job_topic_date ON job_index(topic,published_date);
+CREATE TABLE IF NOT EXISTS runs(run_key TEXT PRIMARY KEY, planned_date TEXT NOT NULL, status TEXT NOT NULL CHECK(status IN ('running','succeeded','failed')), started_at TEXT NOT NULL, finished_at TEXT, error TEXT, publication_status TEXT NOT NULL DEFAULT 'not_requested');
+CREATE TABLE IF NOT EXISTS run_jobs(run_key TEXT NOT NULL REFERENCES runs(run_key), job_id TEXT NOT NULL REFERENCES job_index(job_id), PRIMARY KEY(run_key,job_id));
+CREATE TABLE IF NOT EXISTS sources(source_id TEXT PRIMARY KEY, url TEXT NOT NULL, kind TEXT NOT NULL, retrieved_at TEXT NOT NULL, content_hash TEXT, locator TEXT);
+CREATE TABLE IF NOT EXISTS financial_facts(fact_id TEXT PRIMARY KEY, company TEXT NOT NULL, entity_scope TEXT NOT NULL, period TEXT NOT NULL, currency TEXT NOT NULL, unit TEXT NOT NULL, metric TEXT NOT NULL, value REAL NOT NULL, source_id TEXT NOT NULL REFERENCES sources(source_id), locator TEXT NOT NULL, definition TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS mail_messages(message_id TEXT PRIMARY KEY, received_at TEXT NOT NULL, sender TEXT NOT NULL, subject TEXT NOT NULL, body TEXT NOT NULL, fetched_at TEXT NOT NULL);
+INSERT OR IGNORE INTO schema_migrations VALUES(1,strftime('%Y-%m-%dT%H:%M:%fZ','now'));
