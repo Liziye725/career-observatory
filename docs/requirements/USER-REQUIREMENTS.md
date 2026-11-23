@@ -32,3 +32,6 @@
 | U-019 | 使用已连接公开repo，做好GitHub Actions，每次Schedule后同步更新 | instructions/SCHEDULE-SYNC.zh-CN.md；.github/workflows/schedule-sync.yml |
 
 U-017更新U-008的单轮时限：六家公司仍是批次最终标准。公开仓库同步范围由A-011具体实现，不将完整私人数据公开当作用户已授权。当前平台任务频率以实际配置为准；本次不恢复U-011的旧频率。
+
+| U-020 | 持久共享运行与改进账本，按项目集中问题、重复失败、改进效果与反馈 | worker/ledger.js；ledger.html；instructions/LEDGER.zh-CN.md |
+| U-021 | 现在运行一轮、同步GitHub、保存问题日志并说明数据库形式 | 私人本轮归档与账本；公开运行回执 |

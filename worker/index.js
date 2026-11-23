@@ -1,4 +1,6 @@
 import {topics,validateJob} from './jobs.js';
+const ledgerPage=__LEDGER_PAGE__;
+// __LEDGER_MODULE__
 const page=__PAGE__;
 const workflow=__WORKFLOW__;
 const json=(v,s=200)=>new Response(JSON.stringify(v),{status:s,headers:{'content-type':'application/json; charset=utf-8','cache-control':'no-store','x-content-type-options':'nosniff'}});
@@ -16,6 +18,8 @@ export function validate(v,id){
 export default {async fetch(request,env){
  const u=new URL(request.url),p=u.pathname;
  try{
+ if(p==='/ledger'||p==='/ledger/')return new Response(ledgerPage,{headers:{'content-type':'text/html; charset=utf-8','cache-control':'no-store','content-security-policy':"default-src 'self'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'self'; base-uri 'none'; object-src 'none'"}});
+ const ledgerResponse=await ledgerRoute(request,env);if(ledgerResponse)return ledgerResponse;
  if(p==='/api/workflow'&&request.method==='GET')return json(workflow);
  if(p.startsWith('/api/')&&!env.BUCKET)return json({error:'归档存储尚未连接'},503);
  if(p==='/api/topics'&&request.method==='GET')return json(topics);

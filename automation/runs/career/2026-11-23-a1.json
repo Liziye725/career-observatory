@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "task": "career",
+  "plannedDate": "2026-11-23",
+  "startedAt": "2026-11-23T20:29:11.000Z",
+  "finishedAt": "2026-11-23T20:37:06.296Z",
+  "attempt": 1,
+  "execution": "succeeded",
+  "research": "partial",
+  "archive": "verified",
+  "stage": "archive",
+  "completedUnits": 2,
+  "reusedSources": null,
+  "issues": [
+    "insufficient_evidence",
+    "source_unavailable"
+  ],
+  "nextAction": "continue_research"
+}

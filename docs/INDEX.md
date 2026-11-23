@@ -41,3 +41,5 @@
 
 - [分轮研究与复盘](../instructions/ITERATIVE-RESEARCH.zh-CN.md)
 - [Schedule与GitHub同步](../instructions/SCHEDULE-SYNC.zh-CN.md)
+
+- [持久运行与改进账本](../instructions/LEDGER.zh-CN.md)

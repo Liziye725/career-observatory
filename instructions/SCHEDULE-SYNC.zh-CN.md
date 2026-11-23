@@ -41,6 +41,6 @@ execution=succeeded必须archive=verified；partial研究可以执行成功。fa
 
 ## 集中查看与限制
 
-在仓库Actions中打开最新 `Schedule sync` 的Summary，查看全部回执和反复出现的问题；`schedule-summary`下载包保留30天，源回执在Git中持续保存。完整问题及与用户的讨论在私人报告中。此版本没有把不同私人站点的全文合并到一个共享数据库，也不会自动发邮件或替用户创建反馈。
+在仓库Actions中打开最新 `Schedule sync` 的Summary，查看全部回执和反复出现的问题；`schedule-summary`下载包保留30天，源回执在Git中持续保存。完整问题、改进、续办和用户反馈写入共享私人账本（参见LEDGER.zh-CN.md），完整研究仍留各原站点；并未复制所有私人站点全文到一个数据库。不会自动发邮件或虚构用户反馈。
 
 GitHub公开状态不等于网站实时数据备份；公开仓库仍遵循不提交真实报告的约定。若未来需要完整历史同步，应另选私有数据目的地。

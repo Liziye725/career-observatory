@@ -10,4 +10,6 @@
 
 不因为接口代码存在而把TASK-04/05写成完成。对应测试结果见docs/operations/VALIDATION.md。
 
-2026-11-23：新增分轮研究协议、白名单运行回执与Schedule sync Actions。Actions负责验证/汇总，不替代研究执行器；首轮真实Schedule端到端同步需后续运行验证。私人站点全文跨项目集中账本尚未实现。
+2026-11-23：新增分轮研究协议、白名单运行回执与Schedule sync Actions。Actions负责验证/汇总，不替代研究执行器；首轮真实Schedule端到端同步需后续运行验证。此后已增加跨项目运行/改进账本；原研究全文仍保留在各原站点。
+
+共享账本增加持久事件API、按项目筛选、历史、反馈和Markdown导出。线上R2、本地SQLite对象适配；迁移到D1尚未执行。

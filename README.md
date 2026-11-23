@@ -54,3 +54,7 @@ node scripts/run-receipts.mjs summary automation/runs .data/schedule-summary.md
 ```
 
 未写入回执不等于未运行；没有回执时汇总明确为空。Actions不消耗ChatGPT模型额度；GitHub资源额度依账号政策。
+
+## 持久运行与改进账本
+
+私人站点 `/ledger` 集中展示项目、未解决问题、历次尝试、改进与用户反馈，支持Markdown导出。线上沿用R2追加JSON事件；本地独立版存SQLite的objects表。旧事件不覆盖，重试按固定id幂等，跨轮按subject关联。详见[账本协议](instructions/LEDGER.zh-CN.md)。GitHub不保存私人日志。
