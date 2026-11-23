@@ -43,3 +43,5 @@
 - [Schedule与GitHub同步](../instructions/SCHEDULE-SYNC.zh-CN.md)
 
 - [持久运行与改进账本](../instructions/LEDGER.zh-CN.md)
+
+- [历史问题与 GitHub 跟踪](operations/ISSUES.md)

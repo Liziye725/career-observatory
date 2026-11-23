@@ -35,3 +35,5 @@ U-017更新U-008的单轮时限：六家公司仍是批次最终标准。公开�
 
 | U-020 | 持久共享运行与改进账本，按项目集中问题、重复失败、改进效果与反馈 | worker/ledger.js；ledger.html；instructions/LEDGER.zh-CN.md |
 | U-021 | 现在运行一轮、同步GitHub、保存问题日志并说明数据库形式 | 私人本轮归档与账本；公开运行回执 |
+
+| U-022 | 历史技术问题在 GitHub 跟踪，后续自主代码修改通过 Issue 和 PR | AGENTS.md、GitHub Issues |
