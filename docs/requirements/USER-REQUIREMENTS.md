@@ -22,3 +22,13 @@
 | U-016 | 明确区分用户要求和助手生成部分 | 本表与ASSISTANT-DECISIONS.md |
 
 用户曾询问“全部免费、完全独立能否实现”。这是需要回答和设计的目标，不等于已选定某免费云产品。用户曾报告invalid_state登录错误；本仓库不声称该外部身份问题已修复。
+
+2026-11-23 新增明确需求：
+
+| 编号 | 明确要求 | 对应实现 |
+|---|---|---|
+| U-017 | 接受分几轮研究，更深度、减少重复消耗 | instructions/ITERATIVE-RESEARCH.zh-CN.md |
+| U-018 | 记录失败和低效，指导下次行动并集中讨论 | 私人报告复盘与公开Actions问题分类汇总 |
+| U-019 | 使用已连接公开repo，做好GitHub Actions，每次Schedule后同步更新 | instructions/SCHEDULE-SYNC.zh-CN.md；.github/workflows/schedule-sync.yml |
+
+U-017更新U-008的单轮时限：六家公司仍是批次最终标准。公开仓库同步范围由A-011具体实现，不将完整私人数据公开当作用户已授权。当前平台任务频率以实际配置为准；本次不恢复U-011的旧频率。

@@ -1,5 +1,9 @@
 name: Verify framework
-on: [push, pull_request]
+on:
+  push:
+    paths-ignore: ['automation/runs/**']
+  pull_request:
+    paths-ignore: ['automation/runs/**']
 permissions:
   contents: read
 jobs:

@@ -38,3 +38,6 @@
 - [研究深度规则](../instructions/DEPTH-AND-DECISIONS.zh-CN.md)
 
 - [财务证据与PDF解析](architecture/FINANCIAL-EVIDENCE.md)
+
+- [分轮研究与复盘](../instructions/ITERATIVE-RESEARCH.zh-CN.md)
+- [Schedule与GitHub同步](../instructions/SCHEDULE-SYNC.zh-CN.md)

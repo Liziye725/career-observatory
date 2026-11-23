@@ -9,3 +9,5 @@
 | [TASK-05](TASK-05-OPERATIONS.md) | 调度逻辑已实现、生产运行待验证 | 常驻主机、登录、失败告警、自动补跑、成本与权限 |
 
 不因为接口代码存在而把TASK-04/05写成完成。对应测试结果见docs/operations/VALIDATION.md。
+
+2026-11-23：新增分轮研究协议、白名单运行回执与Schedule sync Actions。Actions负责验证/汇总，不替代研究执行器；首轮真实Schedule端到端同步需后续运行验证。私人站点全文跨项目集中账本尚未实现。
