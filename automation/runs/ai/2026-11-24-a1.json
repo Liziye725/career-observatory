@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "task": "ai",
+  "plannedDate": "2026-11-24",
+  "startedAt": "2026-11-24T05:00:06.000Z",
+  "finishedAt": "2026-11-24T05:19:43.000Z",
+  "attempt": 1,
+  "execution": "succeeded",
+  "research": "complete",
+  "archive": "verified",
+  "stage": "archive",
+  "completedUnits": 12,
+  "reusedSources": null,
+  "issues": [],
+  "nextAction": "continue_research"
+}
