@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "task": "power",
+  "plannedDate": "2026-11-28",
+  "startedAt": "2026-11-28T11:00:38.732Z",
+  "finishedAt": "2026-11-28T11:05:19.906Z",
+  "attempt": 1,
+  "execution": "succeeded",
+  "research": "complete",
+  "archive": "verified",
+  "stage": "archive",
+  "completedUnits": 7,
+  "reusedSources": 0,
+  "issues": [
+    "source_unavailable"
+  ],
+  "nextAction": "advance_topic"
+}
